@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { IconComponent } from './icon/icon.component';
 import { FormSelectComponent } from './form-select/form-select.component';
@@ -15,6 +15,8 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgModelComponent } from './ng-model/ng-model.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 @NgModule({
   declarations: [
@@ -32,8 +34,11 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
     NgSwitchComponent,
     NgClassComponent,
     NgStyleComponent,
+    NgModelComponent,
+    PipeComponent,
   ],
   imports: [
+    FormsModule,
     BrowserModule
   ],
   providers: [],
